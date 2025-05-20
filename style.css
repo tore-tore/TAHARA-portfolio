@@ -483,4 +483,16 @@ nav a:hover::after {
     width: 100%;
     text-align: center;
   }
+
+  .form-wrapper {
+    width: 100%;
+    padding: 0 var(--space-base); /* 左右に少し余白を */
+    box-sizing: border-box;
+  }
+
+  .form-wrapper iframe {
+    width: 100%;
+    min-width: 0;
+  }
+
 }
