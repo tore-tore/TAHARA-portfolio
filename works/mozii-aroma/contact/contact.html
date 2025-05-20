@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample(レンタルシェア)</title>
+  <link rel="stylesheet" href="contact_css/contact.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+        <div class="left">
+          <nav>
+            <div class="top_nav">
+              <div class="nav_left">
+                <ul class="nav_items">
+                  <li class="nav_item"><a href="../home/aroma.html">ホーム</a></li>
+                  <li class="nav_item"><a href="../contact/contact.html">お問い合わせ</a></li>
+                  <li class="nav_item"><a href="../service/service.html">サービス内容</a></li>
+                  <li class="nav_item"><a href="../apo/apo.html">アポイントメント</a></li>
+                  <li class="nav_item"><a href="../plan/plan.html">料金プラン</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="right">
+          <div class="nav_right">
+            <div class="btn0">
+              <a class="btn" href="#">予約する</a>
+            </div>
+            <a class="logo" href="aroma.html">Sample</a>
+          </div>
+        </div>
+        <div class="header-logo-menu">
+          <div id="nav-drawer">
+              <input id="nav-input" type="checkbox" class="nav-shown">
+              <label id="nav-open" for="nav-input"><span></span></label>
+              <label class="nav-shown" id="nav-close" for="nav-input"></label>
+              <div id="nav-content">
+                <ul class="nav_items">
+                  <li class="nav_item"><a href="aroma.html">ホーム</a></li>
+                  <li class="nav_item"><a href="../contact/contact.html">お問い合わせ</a></li>
+                  <li class="nav_item"><a href="../service/service.html">サービス内容</a></li>
+                  <li class="nav_item"><a href="../apo/apo.html">アポイントメント</a></li>
+                  <li class="nav_item"><a href="../plan/plan.html">料金プラン</a></li>
+                </ul>
+              </div>
+          </div>
+          <div class="logo-area">
+            <a href="aroma.html">Sample</a>
+          </div>
+        </div>
+    </header>
+    <main>
+      <div class="contact">
+        <div class="contact-1">
+          <div class="contact-11">
+            <h1>お問い合わせ</h1>
+            <p>皆様のプロジェクト推進に役立つスキルを提供いたします。ぜひご相談ください！</p>
+          </div>
+        </div>
+        <div class="contact-0">
+          <img src="../image/e09f377d.jpg">
+        </div>
+      </div>
+      <div id="formWrap">
+          <h3>詳しく知りたい方へ</h3>
+        <p>下記フォームに必要事項を入力後、確認ボタンを押してください。</p>
+        <form method="post" action="mail.php">
+        <table class="formTable">
+          <tr>
+            <th>ご用件</th>
+              <td><select name="ご用件">
+                <option value="">選択してください</option>
+                <option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>
+                <option value="リンクについて">リンクについて</option>
+              </select></td>
+          </tr>
+          <tr>
+            <th>お名前</th>
+            <td><input size="20" type="text" name="お名前" /> ※必須</td>
+          </tr>
+          <tr>
+            <th>Mail（半角）</th>
+            <td><input size="30" type="text" name="Email" /> ※必須</td>
+          </tr>
+          <tr>
+            <th>サイトを知ったきっかけ</th>
+            <td><input name="サイトを知ったきっかけ[]" type="checkbox" value="友人・知人" /> 友人・知人
+              <input name="サイトを知ったきっかけ[]" type="checkbox" value="検索エンジン" /> 検索エンジン</td>
+          </tr>
+          <tr>
+            <th>お問い合わせ内容<br /></th>
+            <td><textarea name="お問い合わせ内容" cols="50" rows="5"></textarea></td>
+          </tr>
+        </table>
+        <p align="center">
+          <input type="submit" value=" 確認 " />　<input type="reset" value="リセット" />
+        </p>
+        </form>
+        <p>※IPアドレスを記録しております。いたずらや嫌がらせ等はご遠慮ください</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

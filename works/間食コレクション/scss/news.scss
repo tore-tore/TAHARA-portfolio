@@ -1,0 +1,73 @@
+@media screen and (max-width:1500px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    background: #f0ebeb;
+    font-family: Times New Roman;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  header {
+    flex: 0;
+    .menu_wrapper{
+      .top-wrapper {
+        .h-icon {
+          text-align: center;
+          img {
+            width: auto;
+            height: 500px;
+          }
+        }
+      }
+    }
+  }
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 5px;
+      #posts-wrap {
+        width: 100%;
+        #posts {
+          width: 100%;
+          #post-wrap {
+            
+            #post {
+              margin-bottom: 30px;
+              width: 50%;
+              
+              .post-header {
+                margin-bottom: 15px;
+                
+                h2 {
+                  font-size: 16px;
+                  font-weight: bold;
+                }
+                
+                .post-meta {
+                  font-size: 12px;
+                  padding: 7px 0;
+                  color: #555;
+                }
+              }
+              
+              .post-content {
+                overflow: hidden;
+                
+                .post-image {
+                  float: left;//後で直す
+                  width: 115px;
+                }
+                
+                .post-body {
+                  margin-left: 115px;
+                }
+              }
+            }
+          }
+        }
+      }
+  }
+}

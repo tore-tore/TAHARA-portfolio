@@ -1,0 +1,399 @@
+$width: 1000px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #8ba5d2;
+}
+
+.wrapper{
+  width: $width;
+  margin: 0 auto;
+}
+
+// メニューバーです
+header {
+  background-color: #8ba5d2;
+  height: 50px;
+  z-index: 100;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width:$width;
+
+  .right {
+    width: 50%;
+  }
+
+  .left {
+    width: 50%;
+  }
+
+  .header-logo-menu {
+    display: none;
+  }
+
+  nav {
+    height: 50px;
+    justify-content: space-around;
+  }
+
+  .top_nav {
+    height: 50px;
+  }
+
+  .nav_left {
+    overflow: hidden;
+    height: 50px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 50px;
+    letter-spacing: -1em;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav_item {
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    letter-spacing: 0em;
+    
+
+    a {
+      height: 50px;
+      line-height: 50px;
+      text-decoration: none;
+      color: white;
+      width: 100%;
+
+      // 下線のアニメーション
+      position: relative;
+    }
+
+    a::after {
+      position:absolute;
+      bottom: 2px;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: #333;
+      opacity: 0;
+      visibility: hidden;
+      transition: .3s;
+    }
+
+    a:hover::after {
+      bottom: -4px;
+      opacity: 1;
+      visibility: visible;
+    }
+    // ここまで
+  }
+
+
+  .nav_right {
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      display: block;
+      text-decoration: none;
+      white-space: nowrap;
+      color: white;
+      height: 50px;
+      line-height: 50px;
+    }
+
+    .btn0 {
+      position:relative;
+    }
+
+    .btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 2px 10px;
+      border-radius: 10px;
+      text-align: center;
+      background-color:rgb(255, 255, 255);
+      color:#323335;
+      display: block;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background .5s;
+    }
+
+    .btn:hover {
+      background-color: gray;
+    }
+  }
+}
+
+main {
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+    // width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    .contact-0 {
+      width: 50%;
+      padding: 20px 0px 20px 15px;
+
+      img {
+        max-width: 100%;
+        // width: 50%;
+        // height: auto;
+      }
+    }
+
+    .contact-1 {
+      width: 50%;
+
+      .contact-11 {
+        padding-right: 90px;
+      }
+
+      h1 {
+        color: white;
+      }
+
+      p {
+        color: white;
+      }
+    }
+  }
+  #formWrap {
+    width:100%;
+    margin:0 auto;
+    color:#323335;
+    line-height:120%;
+    font-size:90%;
+    // background-color: white;
+  }
+  table.formTable{
+    width:100%;
+    margin:0 auto;
+    border-collapse:collapse;
+  }
+  table.formTable td,table.formTable th{
+    border:1px solid #ccc;
+    padding:10px;
+  }
+  table.formTable th{
+    width:30%;
+    font-weight:normal;
+    background:#efefef;
+    text-align:left;
+  }
+}
+
+@media screen and (max-width:599px){
+  .wrapper{
+    max-width: 100%;
+    // margin: 0 auto;
+  
+  header{
+    max-width: 100%;
+    padding: 10px;
+    background: #8ba5d2;
+  
+
+    .left {
+      display: none;
+    }
+
+    .right {
+      display: none;
+    }
+
+
+    #nav-drawer {
+      position: relative;
+      // padding: 10px 20px 0 0;
+    }
+
+    .nav-shown {
+      display: none;
+    }
+
+    #nav-open {
+      display: inline-block;
+      width: 30px;
+      vertical-align: middle;
+    }
+
+    #nav-open span,#nav-open span::before, #nav-open span::after {
+      position: absolute;
+      height: 3px;
+      width: 25px;
+      border-radius: 3px;
+      background: #555;
+      display: block;
+      content:"";
+      cursor: pointer;
+    }
+
+    #nav-open span:before {
+      bottom: -8px;
+    }
+
+    #nav-open span:after {
+      bottom: -16px;
+    }
+
+    #nav-close {
+      display: none;
+      position: fixed;
+      z-index: 99;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+      opacity: 0;
+      transition: .3s ease-in-out;
+    }
+
+    #nav-content {
+      overflow: auto;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      width: 90%;
+      max-width: 330px;
+      height: 100%;
+      background: #8ba5d2;
+      transition: .3s ease-in-out;
+      transform: translateX(-105%);
+
+      ul {
+        display: block;
+        padding: 10px;
+        margin: 0;
+        list-style: none;
+        // height: 50px;
+        letter-spacing: -1em;
+        // display: flex;
+        justify-content: space-around;
+      }
+    
+      .nav_item {
+        // height: 50px;
+        // line-height: 50px;
+        // vertical-align: middle;
+        letter-spacing: 0em;
+        
+    
+        a {
+          text-decoration: none;
+          color: white;
+        }
+    }
+  }
+
+    #nav-input:checked ~ #nav-close {
+      display: block;
+      opacity: .5;
+    }
+
+    #nav-input:checked ~ #nav-content {
+      transform: translateX(0%);
+      box-shadow: 6px 0 25px rgba(0,0,0,.15);
+    }
+
+    .header-logo-menu {
+      display: flex;
+      // flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .logo-area {
+      text-align: center;
+      margin: auto;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }  
+  }
+
+  main {
+    padding: 0 10px;
+
+    .contact {
+      display: block;
+      flex-direction: column;
+      margin-top: 60px;
+  
+      .contact-0 {
+        width: 100%;
+        padding: 20px 0px 20px 0px;
+  
+        img {
+          max-width: 100%;
+          // width: 50%;
+          // height: auto;
+        }
+      }
+  
+      .contact-1 {
+        width: 100%;
+  
+        .contact-11 {
+          padding-right: 0px;
+          margin: 10px 0;
+      
+            h1 {
+              color: white;
+              margin: 10px 0;
+            }
+      
+            p {
+              color: white;
+              margin: 10px 0;
+            }
+          }
+      }
+    }
+    
+    #formWrap {
+      width:95%;
+      margin:0 auto;
+    }
+    table.formTable th, table.formTable td {
+      width:auto;
+      display:block;
+    }
+    table.formTable th {
+      margin-top:5px;
+      border-bottom:0;
+    }
+    input[type="text"], textarea {
+      width:80%;
+      padding:5px;
+      font-size:110%;
+      display:block;
+    }
+    input[type="submit"], input[type="reset"], input[type="button"] {
+      display:block;
+      width:100%;
+      height:40px;
+    }
+    
+  }
+  }
+}

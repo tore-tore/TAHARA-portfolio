@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAHARAのポートフォリオ</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <div class="container">
+        <h1 class="logo">TAHARAのPortFolio</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ファーストビュー -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="intro">こんにちは、Webコーダーの田原大貴です。</p>
+        <h2>お客様の想いを、丁寧に形にします。</h2>
+        <a href="#works" class="btn">制作実績を見る</a>
+      </div>
+    </section>
+
+    <!-- About セクション -->
+    <section id="about" class="about fade-in">
+      <div class="container">
+        <h2 class="section-tittle">About</h2>
+        <div class="about-container">
+          <img src="/Users/taharadaiki/Desktop/new portfolio/images/myImage.JPG" alt="私のイメージ" class="about-img">
+          <div class="about-text">
+            <p>はじめまして。Webコーダーの田原大貴です。</p>
+            <p>
+              独学でWeb制作を学び、HTML・CSSを中心に、日々スキルを磨いています。<br>
+              「知らないことでも前向きに取り組む姿勢」と「責任感を持って仕事に向き合うこと」が私の強みです。
+            </p>
+            <p>
+              見る人・使う人にやさしいサイトづくりを心がけています。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Works セクション -->
+    <section id="works" class="works fade-in">
+      <div class="container">
+        <h2 class="section-tittle">Works</h2>
+        <div class="works-list">
+
+          <!-- 実績カード１ -->
+          <div class="work-card" style="--delay: 0.1s;">
+            <iframe src="/Users/taharadaiki/Desktop/new portfolio/works/間食コレクション/index.html" width="100%" height="200" style="border: none;"></iframe>
+            <h3>間食コレクション</h3>
+            <p>HTML・CSSのみで作成。モバイル対応。丁寧にコーディングしました。架空の商品サイトです。</p>
+            <a href="/Users/taharadaiki/Desktop/new portfolio/works/間食コレクション/index.html" class="btn small" target="_blank">サイトを開く</a>
+          </div>
+
+          <!-- 実績カード２ -->
+          <div class="work-card" style="--delay: 0.2s;">
+            <iframe src="/Users/taharadaiki/Desktop/new portfolio/works/mozii-aroma/home/aroma.html" width="100%" height="200" style="border: none;"></iframe>
+            <h3>サンプルサイト</h3>
+            <p>シンプルで清潔感のあるアロマ系商品の紹介ページ。HTML・CSSのみで構築し、スマホでも見やすいようデザインを最適化。ホバーやボタンの演出も丁寧に設計しました。</p>
+            <a href="/Users/taharadaiki/Desktop/new portfolio/works/mozii-aroma/home/aroma.html" class="btn small" target="_blank">サイトを開く</a>
+          </div>
+
+          <!-- 実績カード３ -->
+          <div class="work-card" style="--delay: 0.3s;">
+            <iframe src="/Users/taharadaiki/Desktop/new portfolio/works/MyCalender/calendar.html" width="100%" height="200" style="border: none;"></iframe>
+            <h3>カレンダー</h3>
+            <p>月ごとの予定管理ができる、シンプルなカレンダーUIを制作。HTMLとCSS、JSで日付の整列やスタイリングを実現し、ユーザーが見やすく使いやすい配置を意識しました。</p>
+            <a href="/Users/taharadaiki/Desktop/new portfolio/works/MyCalender/calendar.html" class="btn small" target="_blank">サイトを開く</a>
+          </div>
+
+          <!-- 実績カード４ -->
+          <div class="work-card" style="--delay: 0.4s;">
+            <iframe src="/Users/taharadaiki/Desktop/new portfolio/works/MyHeartAnimation/heart.html" width="100%" height="200" style="border: none;"></iframe>
+            <h3>イイねボタン</h3>
+            <p>ハートのアニメーションが特徴の「イイね」ボタン。CSSアニメーションを活用して、クリックに応じた動きや変化を実装。ちょっとした感情表現を楽しく演出できます。</p>
+            <a href="/Users/taharadaiki/Desktop/new portfolio/works/MyHeartAnimation/heart.html" class="btn small" target="_blank">サイトを開く</a>
+          </div>
+
+          <!-- 実績カード５ -->
+          <div class="work-card" style="--delay: 0.5s;">
+            <iframe src="/Users/taharadaiki/Desktop/new portfolio/works/MyOmikuji/index.html" width="100%" height="200" style="border: none;"></iframe>
+            <h3>おみくじ</h3>
+            <p>ボタンを押すとランダムで運勢が表示されるおみくじ機能を、HTML・CSS・JSで実装。ちょっとした遊び心を加えた、親しみやすいインタラクション作品です。</p>
+            <a href="/Users/taharadaiki/Desktop/new portfolio/works/MyOmikuji/index.html" class="btn small" target="_blank">サイトを開く</a>
+          </div>
+
+          <!-- 実績カード６ -->
+          <div class="work-card" style="--delay: 0.6s;">
+            <iframe src="/Users/taharadaiki/Desktop/new portfolio/works/MyStopwach/index.html" width="100%" height="200" style="border: none;"></iframe>
+            <h3>ストップウォッチ</h3>
+            <p>シンプルなストップウォッチUI。HTMLとCSSとJS構成で、ボタンの配置や視認性に配慮してデザイン。数字の見やすさや配色バランスにもこだわりました。</p>
+            <a href="/Users/taharadaiki/Desktop/new portfolio/works/MyStopwach/index.html" class="btn small" target="_blank">サイトを開く</a>
+          </div>
+
+          <!-- 実績カード７ -->
+          <div class="work-card" style="--delay: 0.7s;">
+            <iframe src="/Users/taharadaiki/Desktop/new portfolio/works/MyTypingGame/index.html" width="100%" height="200" style="border: none;"></iframe>
+            <h3>タイピングゲーム</h3>
+            <p>制限時間内に単語を正しく入力するタイピングゲーム。HTMLとCSS、JSで構成し、タイピングのしやすさやレイアウトの視認性に重点を置いています。</p>
+            <a href="/Users/taharadaiki/Desktop/new portfolio/works/MyTypingGame/index.html" class="btn small" target="_blank">サイトを開く</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Services セレクション -->
+    <section id="services" class="services fade-in">
+      <div class="container">
+        <h2 class="section-tittle">Services</h2>
+        <div class="services-list">
+
+          <div class="service-item">
+            <i class="fa-solid fa-code service-icon"></i>
+            <h3>HTML/CSSコーディング</h3>
+            <p>レスポンシブ対応、モバイルフレンドリーなサイトを丁寧にコーディングします。</p>
+          </div>
+
+          <div class="service-item">
+            <i class="fa-solid fa-laptop-code service-icon"></i>
+            <h3>デザインカンプの再現</h3>
+            <p>Figmaなどのデザインを元に、忠実にコーディングします。</p>
+          </div>
+
+          <div class="service-item">
+            <i class="fa-solid fa-wand-magic-sparkles service-icon"></i>
+            <h3>簡単なJavaScript</h3>
+            <p>おみくじ・タイマーなどの簡単な動きを実装できます。</p>
+          </div>
+
+          <div class="service-item">
+            <i class="fa-solid fa-hands-helping service-icon"></i>
+            <h3>丁寧な対応</h3>
+            <p>「責任感を持って仕事に向き合う姿勢」でご要望に対応します。</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact セクション -->
+    <section id="contact" class="contact fade-in">
+      <div class="container">
+        <h2 class="section-tittle">Contact</h2>
+        <p class="contact-text">
+          お仕事のご相談・ご依頼など、お気軽にご連絡ください。
+        </p>
+
+        <div class="form-wrapper">
+          <div class="form-loading" id="form-loading">フォームを読み込み中です...</div>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdthx4VSpts3So8FRmzOXTlSEuRZR6GJzk0ua2FGTH5d4MRbg/viewform?embedded=true" width="640" height="721" frameborder="0" marginheight="0" marginwidth="0"
+          onload="document.getElementById('form-loading').style.display='none';">読み込んでいます…</iframe>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-logo">TAHARAのポートフォリオ</p>
+      <ul class="footer-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="copyright">&copy; 2025 Hiroki Tahara. All rights reserved</p>
+    </div>
+  </footer>
+</html>
