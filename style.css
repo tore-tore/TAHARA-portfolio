@@ -468,6 +468,7 @@ nav a:hover::after {
   .services-list {
     flex-direction: column;
     align-items: center;
+    gap: 1rem; /* 要素間の余白も追加 */
   }
 
   .about-img {
@@ -475,18 +476,26 @@ nav a:hover::after {
     margin-bottom: 1rem;
   }
 
-  iframe {
-    height: 160px;
+  .works-list iframe,
+  .form-wrapper iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* アスペクト比を保ちつつ可変に */
+    max-width: 100%;
+    border: none;
   }
 
   .btn {
     width: 100%;
+    max-width: 320px; /* 幅広すぎ防止 */
     text-align: center;
+    display: block;
+    margin: 1rem auto 0;
   }
 
   .form-wrapper {
     width: 100%;
-    padding: 0 var(--space-base); /* 左右に少し余白を */
+    padding: 0 1rem; /* 左右に少し余白 */
     box-sizing: border-box;
   }
 
@@ -494,5 +503,13 @@ nav a:hover::after {
     width: 100%;
     min-width: 0;
   }
+
+  .services-list > div {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
 
 }
